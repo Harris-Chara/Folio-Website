@@ -1,0 +1,109 @@
+.banner {
+    background:url("images/banner.jpg");
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    display: grid;
+}
+
+/* .btn1 {
+    font-family: 'Noto Sans JP', sans-serif;
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 30px;
+    padding: 10px 30px;
+    background-color: rgba(0,0,0,3);
+    border: 2px solid #fff;
+    font-size: 120%;
+    font-weight: 600;
+    font-style: italic;
+    color: #fff;
+    text-decoration: none;
+    transition: 0.3s ease;
+}
+
+.btn1:hover {
+    padding: 20px 60px;
+    border-radius: 300px;
+    color: #fff;
+    text-decoration: none;
+} */
+
+.name {
+    font-family: 'Noto Sans JP', sans-serif;
+    font-size: 800%;
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+
+    animation: typing 3s steps(18),
+        blink 1s steps(2) 3s infinite;
+    overflow: hidden;
+    white-space: nowrap;
+    border-right: 12px solid black;
+}
+@keyframes typing {
+    0% {
+        width: 0ch;
+    }
+    100% {
+        width: 90%;
+    }
+}
+@keyframes blink {
+    to {
+        border-right: transparent;
+    }
+}
+  
+  .button {
+    display: flex;
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Noto Sans JP', sans-serif;
+    font-style: italic;
+    text-decoration: none;
+    padding: 20px 50px;
+    font-size: 1.25rem;
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin: 32px;
+  }
+
+  .buttonEffect {
+    color: white;
+  }
+
+  .button:hover {
+    text-decoration: none;
+    color: white;
+  }
+  
+  .buttonEffect::after,
+  .buttonEffect::before {
+    border: 3px solid white;
+    content: "";
+    position: absolute;
+    width: calc(100% - 6px);
+    height: calc(100% - 6px);
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+    transition: transform 0.3s ease;
+  }
+  
+  .buttonEffect:hover::after {
+    transform: translate(-5px, -5px);
+  }
+  
+  .buttonEffect:hover::before {
+    transform: translate(5px, 5px);
+  }
