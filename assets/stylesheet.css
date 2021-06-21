@@ -136,6 +136,7 @@ body {
   position: relative;
   left: -5%;
   top: -5vh;
+  height: 1px;
 }
 
 .aboutMe {
@@ -166,7 +167,7 @@ body {
   margin-top: 80px;
   margin-bottom: 30px;
   width: 27vw;
-  
+
   transition: 0.4s;
   position: absolute;
   left: 15%;
@@ -212,7 +213,6 @@ body {
   left: 73vw;
   top: -38vw;
   transition: 0.4s;
-  display: none;
 }
 
 .qualitiesText p {
@@ -223,19 +223,74 @@ body {
   transform: scale(1.05);
 }
 
+.qualitiesTextDev {
+  display: none;
+  position: relative !important;
+  left: 35vw;
+  animation: slideIn 0.5s forwards;
+}
+
+.qualitiesTextMusician {
+  display: none;
+  position: relative !important;
+  left: 35vw;
+  animation: slideIn 0.5s forwards;
+}
+
+.qualitiesTextPhotographer {
+  display: none;
+  position: relative !important;
+  left: 35vw;
+  animation: slideIn 0.5s forwards;
+}
+
+.qualitiesTextTester {
+  display: none;
+  position: relative !important;
+  left: 35vw;
+  animation: slideIn 0.5s forwards;
+}
+
+.qualitiesGraphicDesigner {
+  display: none;
+  position: relative !important;
+  left: 35vw;
+  animation: slideIn 0.5s forwards;
+}
+
+.qualitiesTechEnthusiast {
+  display: none;
+  position: relative !important;
+  left: 35vw;
+  animation: slideIn 0.5s forwards;
+}
+
+@keyframes slideIn {
+  0% {
+    opacity: 0%;
+  }
+  100% {
+    opacity: 100%;
+    left: 0vw;
+  }
+}
+
 @media only screen and (max-width: 1024px) {
 
   .qualities {
-    right: -5%;
-    position: unset;
-    display: unset;
-    margin: 3%;
-    margin-left: 6%;
+    margin-top: 0%;
+    font-size: 4rem;
+    position: relative;
+    left: 41%;
   }
 
   .qualities p {
     margin-top: 0%;
     font-size: 4rem;
+  }
+
+  .qualitiesText p {
+    font-size: 2.8rem;
   }
 
   .disappear {
