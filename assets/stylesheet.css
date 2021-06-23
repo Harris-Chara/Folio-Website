@@ -106,7 +106,7 @@ body {
 
 .whoAmI {
   width: 100%;
-  height: fit-content;
+  /* height: fit-content; */
 }
 
 .subheading h1 {
@@ -118,6 +118,7 @@ body {
   transform: translate(-50%, -50%);
   color: black;
   transition: 0.4s;
+  z-index: 1;
 }
 
 .subheading h4 {
@@ -128,6 +129,7 @@ body {
   transform: translate(-50%, -50%);
   color: black;
   transition: 0.4s;
+  z-index: 1;
 }
 
 .subheading h1:hover {
@@ -141,10 +143,10 @@ body {
 
 .content {
   position: relative;
-  left: 9%;
   top: -5vh;
-  height: 1px;
-  transform: scale(1.1);
+  margin: 0% auto;
+  width: 100%;
+  padding-bottom: 6%;
 }
 
 .aboutMe {
@@ -170,7 +172,7 @@ body {
 
   transition: 0.4s;
   position: absolute;
-  left: 15%;
+  left: 23%;
 }
 
 .imageItems img {
@@ -186,7 +188,7 @@ body {
   width: 28%;
   position: relative;
   top: 12vh;
-  left: 40%;
+  left: 50%;
   margin-left: 5px;
 }
 
@@ -198,6 +200,7 @@ body {
   padding: 0.65vh;
   display: flex;
   transition: 0.4s;
+  cursor: pointer;
 }
 
 .qualitiesP:hover {
@@ -263,6 +266,7 @@ body {
   position: relative !important;
   animation: slideIn 0.5s forwards,
   fadeIn 1s 0.2s forwards;
+  padding-bottom: 10%;
 }
 
 @keyframes slideIn {
@@ -273,6 +277,17 @@ body {
   100% {
     opacity: 0%;
     font-size: 1rem;
+  }
+}
+
+@keyframes slideInMobile {
+  0% {
+    opacity: 0%;
+    font-size: 0rem;
+  }
+  100% {
+    opacity: 0%;
+    font-size: 3rem;
   }
 }
 
@@ -288,41 +303,46 @@ body {
 
 @media only screen and (max-width: 1024px) {
 
+  .content {
+    padding-bottom: 15%;
+  }
+
+  .subheading h1 {
+    font-size: 9vw !important;
+    margin-top: 5% !important;
+    
+  }
+  
+  .subheading h4 {
+    font-size: 4vw !important;
+    margin-top: 12% !important;
+  }
+
+  .qualitiesTechEnthusiast {
+    padding-bottom: 15% !important;
+  }
+
   .qualities {
     margin-top: 0%;
     font-size: 4rem;
     position: relative;
-    left: 8%;
+    left: 15%;
     width: 71vw;
   }
 
   .qualitiesP {
-    margin-top: 0%;
     font-size: 4rem;
   }
 
-  .qualitiesText p {
-    font-size: 2.8rem;
-    animation: none;
-  }
-
-  .qualitiesTextDev {
+  .qualitiesText {
     position: relative !important;
-    left: -53vw;
-    top: -50vh;
-    min-width: 76vw;
+    min-width: 65vw;
     padding-bottom: 5px;
+    animation: slideInMobile 0.5s forwards,
+    fadeIn 1s 0.2s forwards;
   }
 
   .disappear {
     display: none;
-  }
-
-  .subheading h1 {
-    font-size: 6vw;
-  }
-
-  .subheading h4 {
-    font-size: 3vw;
   }
 }
