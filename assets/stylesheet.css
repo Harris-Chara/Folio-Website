@@ -300,26 +300,70 @@ body {
   }
 }
 
+@media only screen and (max-device-width: 1024px) and (min-device-width: 376px) {
+  .content {
+    padding-bottom: 15%;
+  }
 
-@media only screen and (max-width: 1024px) {
+  .subheading h1 {
+    font-size: 9vw;
+    margin-top: 5%;
+    
+  }
+  
+  .subheading h4 {
+    font-size: 4vw;
+    margin-top: 12%;
+  }
+
+  .qualitiesTechEnthusiast {
+    padding-bottom: 15%;
+  }
+
+  .qualities {
+    margin-top: 0%;
+    font-size: 4rem;
+    position: relative;
+    left: 15%;
+    width: 71vw;
+  }
+
+  .qualitiesP {
+    font-size: 4rem;
+  }
+
+  .qualitiesText {
+    position: relative !important;
+    min-width: 65vw;
+    padding-bottom: 5px;
+    animation: slideInMobile 0.5s forwards,
+    fadeIn 1s 0.2s forwards;
+  }
+
+  .disappear {
+    display: none;
+  }
+}
+
+@media only screen and (max-device-width: 375px) {
 
   .content {
     padding-bottom: 15%;
   }
 
   .subheading h1 {
-    font-size: 9vw !important;
-    margin-top: 5% !important;
+    margin-top: 8% !important;
+    font-size: 8vw;
     
   }
   
   .subheading h4 {
-    font-size: 4vw !important;
-    margin-top: 12% !important;
+    font-size: 5vw;
+    margin-top: 16% !important;
   }
 
   .qualitiesTechEnthusiast {
-    padding-bottom: 15% !important;
+    padding-bottom: 15%;
   }
 
   .qualities {
