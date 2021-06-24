@@ -62,12 +62,15 @@ function setQualitiesText(quality) {
 function appear() {
     var header = document.getElementById('header');
     var logo = document.getElementById('logo');
+    var burger = document.getElementById('burger');
     
     if (scrollY > 0){
         header.classList.add('scrolling');
         logo.classList.add('logoScrolling');
+        burger.classList.add('burgerScrolling');
     } else {
         header.classList.remove('scrolling');
         logo.classList.remove('logoScrolling')
+        burger.classList.remove('burgerScrolling');
     }
 }
