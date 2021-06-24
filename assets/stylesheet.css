@@ -300,6 +300,32 @@ body {
   }
 }
 
+.footer {
+  background-color: black;
+  height: 15vw;
+  color: white;
+}
+
+.footerLinks {
+  list-style-type: none;
+  display: flex;
+  padding-left: 40%;
+  padding-top: 5%;
+}
+
+.footerLinks li {
+  padding-left: 2%;
+}
+
+.navLinks {
+  width: 4vw;
+  transition: 0.4s;
+}
+
+.navLinks:hover {
+  filter: invert(100%);
+}
+
 @media only screen and (max-device-width: 1024px) and (min-device-width: 376px) {
   .content {
     padding-bottom: 15%;
@@ -342,6 +368,16 @@ body {
 
   .disappear {
     display: none;
+  }
+
+  .footerLinks {
+    padding-left: 27%;
+    padding-top: 3.5%;
+  }
+
+  .navLinks {
+    width: 8vw;
+    padding-left: 35%;
   }
 }
 
