@@ -74,3 +74,14 @@ function appear() {
         burger.classList.remove('burgerScrolling');
     }
 }
+
+function toggleBurger() {
+    var mobileMenu = document.getElementById('mobileMenu');
+
+    if (mobileMenu.classList.contains('appear')) {
+        mobileMenu.classList.remove('appear')
+    }
+    else {
+        mobileMenu.classList.add('appear')
+    }
+}

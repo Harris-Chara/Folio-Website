@@ -416,6 +416,36 @@ header ul li:hover,
     padding-right: 15%;
   }
 
+  .mobileMenu {
+    height: 100%;
+    background-color: black;
+    width: 45%;
+    position: fixed;
+    top: 0;
+    right: -60%;
+    z-index: 999 !important;
+    opacity: 95%;
+    transition: 0.6s ease-in-out;
+  }
+
+  .appear {
+    display: block !important;
+    right: 0% !important;
+  }
+
+  .mobileUL{
+    color: white;
+    font-size: 3rem;
+    position: relative;
+    top: 8vh;
+  }
+
+  .mobileLI {
+    text-decoration: none;
+    list-style: none;
+    margin-top: 10%;
+  }
+
   .bar {
     height: 22%;
     width: 100%;
@@ -479,6 +509,43 @@ header ul li:hover,
 
 @media only screen and (max-device-width: 375px) {
 
+  header {
+    padding: 5.5% !important;
+  }
+
+  header ul {
+    display: none;
+  }
+
+  .logo {
+    padding-left: 0;
+  }
+
+  .burger {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 3%;
+    height: 21px;
+    padding-right: 10%;
+    transition: 0.6s;
+  }
+
+  .burgerScrolling {
+    padding-right: 15%;
+  }
+
+  .bar {
+    height: 22%;
+    width: 100%;
+    background-color: white;
+    border-radius: 5px;
+  }
+
+  .banner {
+    background-position: 80% center;
+  }
+
   .content {
     padding-bottom: 15%;
   }
@@ -520,5 +587,15 @@ header ul li:hover,
 
   .disappear {
     display: none;
+  }
+
+  .footerLinks {
+    padding-left: 27%;
+    padding-top: 3.5%;
+  }
+
+  .navLinks {
+    width: 8vw;
+    padding-left: 35%;
   }
 }
