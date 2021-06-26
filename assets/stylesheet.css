@@ -542,6 +542,36 @@ header ul li:hover,
     border-radius: 5px;
   }
 
+  .mobileMenu {
+    height: 100%;
+    background-color: black;
+    width: 45%;
+    position: fixed;
+    top: 0;
+    right: -60%;
+    z-index: 999 !important;
+    opacity: 95%;
+    transition: 0.6s ease-in-out;
+  }
+
+  .appear {
+    display: block !important;
+    right: 0% !important;
+  }
+
+  .mobileUL{
+    color: white;
+    font-size: 3rem;
+    position: relative;
+    top: 8vh;
+  }
+
+  .mobileLI {
+    text-decoration: none;
+    list-style: none;
+    margin-top: 10%;
+  }
+
   .banner {
     background-position: 80% center;
   }
