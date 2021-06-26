@@ -584,6 +584,7 @@ header ul li:hover,
 
   .image {
     width: 80vw;
+    height: unset;
     padding-right: unset;
     padding-bottom: 4%;
   }
@@ -727,6 +728,7 @@ header ul li:hover,
 
   .image {
     width: 80vw;
+    height: unset;
     padding-right: unset;
     padding-bottom: 4%;
   }
