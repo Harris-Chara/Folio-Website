@@ -533,6 +533,11 @@ header ul li:hover,
 }
 
 /* Mobile Responsive */
+@media only screen and (max-device-width: 4000px) {
+  .devSubheading h4 {
+    padding-top: 40px;
+  }
+}
 
 @media only screen and (max-device-width: 1024px) and (min-device-width: 376px) {
   header {
