@@ -370,7 +370,8 @@ header ul li:hover,
 
 .music {
   background-color: #ff6964;
-  height: 90%;
+  /* height: 90%; */
+  padding-bottom: 5%;
 }
 
 .musicSubheading h1:hover {
@@ -448,7 +449,8 @@ header ul li:hover,
 
 .development {
   background-color: white;
-  height: 85vw;
+  /* height: 85vw; */
+  padding-bottom: 5%;
 }
 
 .devSubheading h4 {
@@ -645,14 +647,6 @@ header ul li:hover,
     display: none;
   }
 
-  .music {
-    height: 210%;
-  }
-
-  .development {
-    height: 360vw;
-  }
-
   .image,
   .devImage {
     width: 80vw;
@@ -795,16 +789,8 @@ header ul li:hover,
     display: none;
   }
 
-  .music {
-    height: 134%;
-  }
-
   .musicList {
     top: 10vh;
-  }
-
-  .development {
-    height: 370vw;
   }
 
   .image,
@@ -820,6 +806,10 @@ header ul li:hover,
     display: unset;
     position: relative;
     text-align: center;
+  }
+
+  .development {
+    padding-bottom: 15%;
   }
 
   .devList {
