@@ -402,6 +402,7 @@ header ul li:hover,
 
 .imagebox {
   position: relative;
+  overflow: hidden;
 }
 
 .image {
@@ -431,14 +432,75 @@ header ul li:hover,
   text-align: center;
 }
 
-.imageBox:hover .image {
+.imageBox:hover .image,
+.imageBox:hover .devImage {
   filter: blur(1.5px);
   transform: scale(1.05);
 }
 
 .imageBox:hover .textBox {
   opacity: 100%;
-  top: 27vh;
+  top: 50%;
+  transform: translate(0% 50%);
+}
+
+/* Development */
+
+.development {
+  background-color: white;
+  height: 85vw;
+}
+
+.devSubheading h4 {
+  padding-top: 20px;
+}
+
+.devSubheading h1:hover {
+  font-size: 4rem;
+}
+
+.devSubheading h4:hover {
+  font-size: 1.5rem;
+}
+
+.devList {
+  position: relative;
+  top: 13vh;
+  left: 63%;
+  transform: translate(-50%);
+}
+
+.devList ul {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.devList ul li {
+  text-decoration: none;
+  list-style: none;
+  cursor: pointer;
+}
+
+.devImage {
+  width: 33vw;
+  height: 33vw;
+  transition: 0.6s;
+  padding-right: 3%;
+  padding-top: 3%;
+}
+
+.devTextbox {
+  transform: translate(-50%, 5%) !important;
+}
+
+.devTextbox span {
+  background-color: #ff6964;
+  color: white;
+}
+
+.imageBox:hover .devTextbox {
+  opacity: 100%;
+  top: 40%;
 }
 
 /* Footer */
