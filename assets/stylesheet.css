@@ -649,17 +649,27 @@ header ul li:hover,
     height: 210%;
   }
 
-  .image {
+  .development {
+    height: 360vw;
+  }
+
+  .image,
+  .devImage {
     width: 80vw;
     height: unset;
     padding-right: unset;
     padding-bottom: 4%;
   }
 
-  .musicList ul {
+  .musicList ul,
+  .devList ul {
     display: unset;
     position: relative;
     text-align: center;
+  }
+
+  .devList {
+    left: 50%;
   }
 
   .footerLinks {
@@ -793,17 +803,27 @@ header ul li:hover,
     top: 10vh;
   }
 
-  .image {
+  .development {
+    height: 370vw;
+  }
+
+  .image,
+  .devImage {
     width: 80vw;
     height: unset;
     padding-right: unset;
     padding-bottom: 4%;
   }
 
-  .musicList ul {
+  .musicList ul,
+  .devList ul {
     display: unset;
     position: relative;
     text-align: center;
+  }
+
+  .devList {
+    left: 50%;
   }
 
   .footerLinks {
