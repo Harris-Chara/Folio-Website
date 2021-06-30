@@ -21,10 +21,10 @@
     <span class="bar"></span>
   </div>
   <ul>
-    <li>
+    <li onclick="scrollFunction('banner', 1000)">
       Home
     </li>
-    <li>
+    <li onclick="scrollFunction('techEnthusiast', 1000)">
       About Me
     </li>
     <li>
@@ -38,11 +38,11 @@
 
 <body onscroll="appear()">
 
-  <div class="banner">
+  <div class="banner" id="banner">
     <div>
       <h1 class="name">Harris Charalambous</h1>
       <div>
-        <a class="button buttonEffect">Who Am I?</a>
+        <a class="button buttonEffect" onclick="scrollFunction('techEnthusiast', 1000)">Who Am I?</a>
       </div>
     </div>
   </div>
@@ -55,7 +55,7 @@
       <br><br>
     </div>
 
-    <div class="content">
+    <div class="content" id="waiContent">
 
       <div class="imageItems">
         <img src="assets/images/Harris2.jpg" class="disappear">
@@ -127,6 +127,7 @@
       </div>
     </div>
   </div>
+  <span id="scrollAnchor1"></span>
   </div>
 
   <div class="music">
