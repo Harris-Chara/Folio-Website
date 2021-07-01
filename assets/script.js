@@ -86,27 +86,20 @@ function toggleBurger() {
     }
 }
 
-function scrollFunction(target, duration) {
-    var target = document.getElementById(target);
-    var targetPosition = target.getBoundingClientRect().top + document.getElementById('header').clientHeight;
-    var startingPosition = window.pageYOffset;
-    var distance = targetPosition - startingPosition;
-    var startTime = null;
+function scrollFunction(target){
+    var object = document.getElementById(target);
+    var header = document.getElementById('header');
+    var headerSize =  header.offsetHeight;
+    var anchor = object.getBoundingClientRect().top + window.pageYOffset;
+    var position = anchor - headerSize + 60;
 
-    function animate(currentTime){
-        if (startTime === null) startTime = currentTime;
-        var timeElapsed = currentTime - startTime;
-        var run = ease(timeElapsed,startingPosition,distance,duration);
-        window.scrollTo(0,run);
-        if (timeElapsed < duration) requestAnimationFrame(animate);
-    }
+    window.scrollTo(0,position);
 
-    function ease (t, b, c, d) {
-        t /= d / 2;
-        if (t < 1) return c /2 * t + b;
-        t--;
-        return -c / 2 * t (t * (t-2) - 1) + b;
-    }
+    object = null;
+    header = null
+    headerSize =  null;
+    anchor = null;
+    position = null;
 
-    requestAnimationFrame(animate);
+    console.log(position)
 }

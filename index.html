@@ -10,27 +10,26 @@
 
   <link rel="stylesheet" href="assets/stylesheet.css">
   <script src="assets/script.js"></script>
-
 </head>
 
 <header id="header">
-  <img src="assets/images/logo.ico" class="logo" id="logo">
+  <a class="logo" id="logo" onclick="scrollFunction('banner')"><img src="assets/images/logo.ico"></a>
   <div class="burger" id="burger" onclick="toggleBurger()">
     <span class="bar"></span>
     <span class="bar"></span>
     <span class="bar"></span>
   </div>
   <ul>
-    <li onclick="scrollFunction('banner', 1000)">
+    <li onclick="scrollFunction('banner')">
       Home
     </li>
-    <li onclick="scrollFunction('techEnthusiast', 1000)">
+    <li onclick="scrollFunction('whoAmI')">
       About Me
     </li>
-    <li>
+    <li onclick="scrollFunction('music')">
       Music
     </li>
-    <li>
+    <li onclick="scrollFunction('development')">
       Development
     </li>
   </ul>
@@ -42,20 +41,20 @@
     <div>
       <h1 class="name">Harris Charalambous</h1>
       <div>
-        <a class="button buttonEffect" onclick="scrollFunction('techEnthusiast', 1000)">Who Am I?</a>
+        <a class="button buttonEffect" onclick="scrollFunction('whoAmI')">Who Am I?</a>
       </div>
     </div>
   </div>
 
   <div class="whoAmI" id="whoAmI">
     <br>
-    <div class="subheading">
+    <div class="subheading" id="waiSub">
       <h1>Who Am I?</h1>
       <h4>A Brief Introduction</h4>
       <br><br>
     </div>
 
-    <div class="content" id="waiContent">
+    <div class="content" id="content">
 
       <div class="imageItems">
         <img src="assets/images/Harris2.jpg" class="disappear">
@@ -127,10 +126,9 @@
       </div>
     </div>
   </div>
-  <span id="scrollAnchor1"></span>
   </div>
 
-  <div class="music">
+  <div class="music" id="music">
     <br>
     <div class="subheading musicSubheading">
       <h1>Music</h1>
@@ -166,7 +164,7 @@
     </div>
   </div>
 
-  <div class="development">
+  <div class="development" id="development">
     <br>
     <div class="subheading devSubheading">
       <h1>Development</h1>
@@ -212,16 +210,16 @@
 
   <div class="mobileMenu" id="mobileMenu">
     <ul class="mobileUL">
-      <li class="mobileLI">
+      <li class="mobileLI" onclick="scrollFunction('banner')">
         Home
       </li>
-      <li class="mobileLI">
+      <li class="mobileLI" onclick="scrollFunction('whoAmI')">
         About Me
       </li>
-      <li class="mobileLI">
+      <li class="mobileLI" onclick="scrollFunction('music')">
         Music
       </li>
-      <li class="mobileLI">
+      <li class="mobileLI" onclick="scrollFunction('development')">
         Development
       </li>
     </ul>

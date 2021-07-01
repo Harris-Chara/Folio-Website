@@ -67,8 +67,14 @@ header ul li {
   cursor: pointer;
 }
 
+header ul li a {
+  text-decoration: none;
+  color: white;
+}
+
 header ul li:hover,
-.logo:hover {
+.logo:hover,
+header ul li a:hover  {
   transform: scale(1.1);
   color: #ff6964;
 }
@@ -596,6 +602,11 @@ header ul li:hover,
     text-decoration: none;
     list-style: none;
     margin-top: 10%;
+  }
+
+  .mobileLI a {
+    text-decoration: none;
+    color: white;
   }
 
   .bar {
