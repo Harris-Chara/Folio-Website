@@ -103,3 +103,31 @@ function scrollFunction(target){
 
     console.log(position)
 }
+
+
+
+  // var modal = document.querySelector('.modal');
+  // var imgs = document.querySelectorAll('.imageBox');
+  // var modalImage = document.querySelector('.modalImage');
+  // var modalCaption = document.querySelector('.modalCaption');
+
+  // imgs.forEach(img => {
+  //   img.addEventListener('click', () => {
+  //     modal.classList.add('modalOpen');
+  //     modalImage.classList.add('modalImageOpen');
+  //     var imageLoader = img.getAttribute('src');
+  //     modalImage.src = imageLoader;
+  //   });
+  // });
+
+  // modal.addEventListener('click', (e) => {
+  //   if (e.target.classList.contains('modal')) {
+  //     modal.classList.remove('modalOpen');
+  //     modalImage.classList.remove('modalImageOpen');
+  //   }
+  // });
+
+function modalHandler(){
+  var modal = document.getElementById('modal');
+  modal.classList.add('modalOpen');
+}
