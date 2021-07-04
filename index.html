@@ -137,7 +137,7 @@
     <div class="musicList content">
       <ul>
         <li>
-          <div class="imageBox">
+          <div class="imageBox" onclick="modalHandler('scareMeAlbum.webp')">
             <img src="assets/images/scareMeAlbum.webp" class="image">
             <div class="textBox">
               <span>You Don't Scare Me Like You Used To</span>
@@ -145,7 +145,7 @@
           </div>
         </li>
         <li>
-          <div class="imageBox">
+          <div class="imageBox" onclick="modalHandler('ben^2Album.jpg')">
             <img src="assets/images/ben^2Album.jpg" class="image">
             <div class="textBox">
               <span>Ben^2</span>
@@ -153,7 +153,7 @@
           </div>
         </li>
         <li>
-          <div class="imageBox">
+          <div class="imageBox" onclick="modalHandler('stayTuned.jpg')">
             <img src="assets/images/stayTuned.jpg" class="image">
             <div class="textBox">
               <span>You Are More Than You Think You Are</span>
@@ -173,7 +173,7 @@
     <div class="devList content">
       <ul>
         <li>
-          <div class="imageBox">
+          <div class="imageBox" onclick="modalHandler('javaHotDesk.jpg')">
             <img src="assets/images/javaHotDesk.jpg" class="devImage">
             <div class="textBox devTextbox">
               <span>Java Hotdesking System</span>
@@ -181,7 +181,7 @@
           </div>
         </li>
         <li>
-          <div class="imageBox">
+          <div class="imageBox" onclick="modalHandler('python.jpg')">
             <img src="assets/images/python.jpg" class="devImage">
             <div class="textBox devTextbox">
               <span>Python Spammer</span>
@@ -189,7 +189,7 @@
           </div>
         </li>
         <li>
-          <div class="imageBox">
+          <div class="imageBox" onclick="modalHandler('websiteThumbnail.jpg')">
             <img src="assets/images/websiteThumbnail.jpg" class="devImage">
             <div class="textBox devTextbox">
               <span>HTML CSS Javascript Website</span>
@@ -197,8 +197,8 @@
           </div>
         </li>
         <li>
-          <div class="imageBox">
-            <img src="assets/images/eyes.jpg" class="devImage" onclick="modalHandler()">
+          <div class="imageBox" onclick="modalHandler('eyes.jpg')">
+            <img src="assets/images/eyes.jpg" class="devImage">
             <div class="textBox devTextbox">
               <span>HTML CSS Javascript Eyeball Site</span>
             </div>
@@ -225,9 +225,10 @@
     </ul>
   </div>
 
-  <div class="modal" id="modal">
-      <img src="" class="modalImage">
-      <p class="modalCaption"></p>
+  <div class="modal" id="modal" onclick="closeModal()">
+    <img src="" class="modalImage">
+    <h1 class="modalCaption"></h1>
+    <p class="imgDescription"></p>
   </div>
 </body>
 
