@@ -197,7 +197,7 @@ header ul li a:hover {
   transform: translate(-50%, -50%);
   color: black;
   transition: 0.4s;
-  z-index: 0;
+  z-index: 1;
 }
 
 .subheading h1:hover {
@@ -552,6 +552,8 @@ header ul li a:hover {
   opacity: 0;
   pointer-events: none;
   transition: 0.25s ease-out;
+  z-index: 2;
+  overflow-y: hidden;
 }
 
 .modalOpen {
@@ -566,7 +568,6 @@ header ul li a:hover {
   left: 35%;
   transform: translate(-50%, -50%) scale(0.3);
   transition: all 0.25s ease-out;
-  z-index: 99;
   opacity: 30%;
 }
 
@@ -759,6 +760,32 @@ header ul li a:hover {
   .navLinks {
     width: 8vw;
     padding-left: 35%;
+  }
+
+  .modal h1 {
+    top: 15%;
+    font-size: 3rem;
+    left: 50%;
+    width: fit-content;
+    transform: translate(-50%, -50%);
+  }
+
+  .modal p {
+    position: absolute;
+    width: 90%;
+    left: 50;
+    top: 75%;
+    color: white;
+    font-size: 2rem;
+  }
+
+  .modalImage {
+    width: 130%;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0.5);
+    transition: all 0.25s ease-out;
+    z-index: 99;
   }
 }
 

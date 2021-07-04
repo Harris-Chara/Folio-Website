@@ -132,12 +132,14 @@ function modalHandler(src) {
   var modalCaption = document.querySelector('.modalCaption');
   var imgDescription = document.querySelector('.imgDescription');
   var button = document.getElementById('modalButton');
+
+  document.querySelector('html').style.overflowY = 'hidden';
+
   button.style.display = 'block';
 
   modal.classList.add('modalOpen');
   modalImage.classList.add('modalImageOpen');
   modalImage.src = 'assets/images/' + src;
-
 
   //set modalCaption + text
   switch (src) {
@@ -191,4 +193,6 @@ function closeModal(){
 
   modal.classList.remove('modalOpen');
   modalImage.classList.remove('modalImageOpen');
+
+  document.querySelector('html').style.overflowY = 'unset';
 }
