@@ -131,6 +131,8 @@ function modalHandler(src) {
   var modalImage = document.querySelector('.modalImage');
   var modalCaption = document.querySelector('.modalCaption');
   var imgDescription = document.querySelector('.imgDescription');
+  var button = document.getElementById('modalButton');
+  button.style.display = 'block';
 
   modal.classList.add('modalOpen');
   modalImage.classList.add('modalImageOpen');
@@ -142,36 +144,43 @@ function modalHandler(src) {
     case 'scareMeAlbum.webp':
       modalCaption.innerHTML = 'YOU DON\'T SCARE ME LIKE YOU USED TO';
       imgDescription.innerHTML = 'This was my first recorded album. Unfortunately, due to some production issues it was never released, but if you ever catch me playing live you\'ll be able to hear some of the songs off here. It covered alot of my thoughts about growing up and becoming an adult.'
+      button.style.display = 'none';
       break;
 
     case 'ben^2Album.jpg':
       modalCaption.innerHTML = 'BEN^2';
       imgDescription.innerHTML = 'This was a short record I wrote and recorded in the span of 1 day and night. It was dedicated to a very close friend of mine who passed away. Gone but never forgotten, my friend.'
+      button.href = 'https://www.youtube.com/watch?v=hwcTz9dkhXk&list=PLuwFbhJWwTZo-lTikBNMoiTPnorkcE-5-&index=1&ab_channel=HarrisCharalambous';
       break
 
     case 'stayTuned.jpg':
       modalCaption.innerHTML = 'YOU\'RE MORE THAN YOU THINK YOU ARE';
       imgDescription.innerHTML = 'This is an upcoming project of mine that will be released when I stop being lazy and record it. It covers my thoughts and feelings regarding my friends, my family, and the crazy events of 2020 and how it has affected me.'
+      button.style.display = 'none';
       break
 
     case 'javaHotDesk.jpg':
       modalCaption.innerHTML = 'JAVA HOTDESKING SYSTEM';
       imgDescription.innerHTML = 'This was a university assignment made in Java and JavaFX that works as a desk booking management system. A user can sign up, book available desks, check in, etc, while a manager can promote and fire employees, and initiate a covid-lock on certain tables to prevent bookings.'
+      button.style.display = 'none';
       break
 
     case 'python.jpg':
       modalCaption.innerHTML = 'PYTHON EMAIL SPAMMER';
       imgDescription.innerHTML = 'This is a joke Python project I made to prank one of my friends. I do not advise this to be used maliciously or in any capacity outside of friendly/ harmless fun.'
+      button.style.display = 'none';
       break
 
     case 'websiteThumbnail.jpg':
       modalCaption.innerHTML = 'PORTFOLIO WEBSITE';
       imgDescription.innerHTML = 'The website you are currently viewing! I decided to make this to test myself and keep my mind active in between semesters. I know I still have a long way to go, but I am quite proud of the progress I\'ve made and how this site is presented.'
+      button.href = 'https://github.com/Harris-Chara/Folio-Website';
       break
 
     case 'eyes.jpg':
       modalCaption.innerHTML = 'EYEBALL MOUSE TRACKER';
       imgDescription.innerHTML = 'This is a strange little website application I decided to make to test myself. Not a whole lot to say about it, but I find it quite amusing.'
+      button.style.display = 'none';
       break
   }
 }
