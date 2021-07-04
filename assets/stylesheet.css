@@ -763,7 +763,7 @@ header ul li a:hover {
   }
 
   .modal h1 {
-    top: 15%;
+    top: 12%;
     font-size: 3rem;
     left: 50%;
     width: fit-content;
@@ -774,12 +774,13 @@ header ul li a:hover {
     position: absolute;
     width: 90%;
     left: 50;
-    top: 75%;
+    top: 65%;
     color: white;
     font-size: 2rem;
   }
 
   .modalImage {
+    top: 42% !important;
     width: 130%;
     position: absolute;
     left: 50%;
@@ -787,6 +788,20 @@ header ul li a:hover {
     transition: all 0.25s ease-out;
     z-index: 99;
   }
+
+  .modalButton {
+    background-color: #ff6964;
+    position: absolute;
+    color: white;
+    left: 50%;
+    top: 85%;
+    width: fit-content;
+    padding: 5%;
+    transform: translate(-50%);
+    font-size: 3rem;
+    cursor: pointer;
+    transition: 0.4s;
+}
 }
 
 @media only screen and (max-device-width: 375px) {
@@ -937,4 +952,45 @@ header ul li a:hover {
     width: 8vw;
     padding-left: 35%;
   }
+
+  .modal h1 {
+    top: 15%;
+    font-size: 3rem;
+    left: 50%;
+    width: fit-content;
+    transform: translate(-50%, -50%);
+  }
+
+  .modal p {
+    position: absolute;
+    width: 90%;
+    left: 50;
+    top: 60%;
+    color: white;
+    font-size: 2.5rem;
+  }
+
+  .modalImage {
+    width: 170%;
+    position: absolute;
+    top: 40% !important;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0.5);
+    transition: all 0.25s ease-out;
+    z-index: 99;
+  }
+
+  .modalButton {
+    background-color: #ff6964;
+    position: absolute;
+    color: white;
+    left: 50%;
+    top: 85%;
+    width: fit-content;
+    padding: 5%;
+    transform: translate(-50%);
+    font-size: 5rem;
+    cursor: pointer;
+    transition: 0.4s;
+}
 }
