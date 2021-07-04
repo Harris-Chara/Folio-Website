@@ -594,6 +594,26 @@ header ul li a:hover {
   font-size: 1.5rem;
 }
 
+.modalButton {
+  background-color: #ff6964;
+  position: absolute;
+  color: white;
+  left: 65%;
+  top: 73%;
+  width: fit-content;
+  padding: 10px;
+  transform: translate(-50%);
+  font-size: 2rem;
+  cursor: pointer;
+  transition: 0.4s;
+}
+
+.modalButton:hover {
+  font-size: 2.1rem;
+  background-color: black;
+  color: white;
+}
+
 /* Mobile Responsive */
 @media only screen and (max-device-width: 4000px) {
   .devSubheading h4 {
