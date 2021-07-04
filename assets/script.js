@@ -103,29 +103,6 @@ function scrollFunction(target) {
   console.log(position)
 }
 
-
-
-// var modal = document.querySelector('.modal');
-// var imgs = document.querySelectorAll('.imageBox');
-// var modalImage = document.querySelector('.modalImage');
-// var modalCaption = document.querySelector('.modalCaption');
-
-// imgs.forEach(img => {
-//   img.addEventListener('click', () => {
-//     modal.classList.add('modalOpen');
-//     modalImage.classList.add('modalImageOpen');
-//     var imageLoader = img.getAttribute('src');
-//     modalImage.src = imageLoader;
-//   });
-// });
-
-// modal.addEventListener('click', (e) => {
-//   if (e.target.classList.contains('modal')) {
-//     modal.classList.remove('modalOpen');
-//     modalImage.classList.remove('modalImageOpen');
-//   }
-// });
-
 function modalHandler(src) {
   var modal = document.getElementById('modal');
   var modalImage = document.querySelector('.modalImage');
@@ -170,7 +147,7 @@ function modalHandler(src) {
     case 'python.jpg':
       modalCaption.innerHTML = 'PYTHON EMAIL SPAMMER';
       imgDescription.innerHTML = 'This is a joke Python project I made to prank one of my friends. I do not advise this to be used maliciously or in any capacity outside of friendly/ harmless fun.'
-      button.style.display = 'none';
+      button.href = 'https://github.com/Harris-Chara/Python-Spammer'
       break
 
     case 'websiteThumbnail.jpg':
