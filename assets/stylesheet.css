@@ -198,6 +198,7 @@ header ul li a:hover {
   color: black;
   transition: 0.4s;
   z-index: 1;
+  white-space: nowrap;
 }
 
 .subheading h1:hover {
@@ -616,8 +617,8 @@ header ul li a:hover {
 }
 
 /* Mobile Responsive */
-@media only screen and (max-device-width: 4000px) {
-  .devSubheading h4 {
+@media only screen and (max-device-width: 3000px) {
+  .subheading h4 {
     padding-top: 40px;
   }
 }
@@ -664,6 +665,12 @@ header ul li a:hover {
   .appear {
     display: block !important;
     right: 0% !important;
+  }
+
+  .button {
+    font-size: 3.25rem;
+    white-space: nowrap;
+    transform: translate(-55%, -50%);
   }
 
   .mobileUL {
@@ -752,6 +759,12 @@ header ul li a:hover {
     left: 50%;
   }
 
+  .devList,
+  .musicList {
+    height: fit-content !important;
+    padding-bottom: 20% !important;
+  }
+
   .footerLinks {
     padding-left: 27%;
     padding-top: 3.5%;
@@ -801,7 +814,7 @@ header ul li a:hover {
     font-size: 3rem;
     cursor: pointer;
     transition: 0.4s;
-}
+  }
 }
 
 @media only screen and (max-device-width: 375px) {
@@ -871,6 +884,12 @@ header ul li a:hover {
 
   .banner {
     background-position: 80% center;
+  }
+
+  .button {
+    font-size: 7.25rem;
+    white-space: nowrap;
+    transform: translate(-55%, -50%);
   }
 
   .content {
@@ -943,6 +962,12 @@ header ul li a:hover {
     left: 50%;
   }
 
+  .devList,
+  .musicList {
+    height: fit-content !important;
+    padding-bottom: 20% !important;
+  }
+
   .footerLinks {
     padding-left: 27%;
     padding-top: 3.5%;
@@ -992,5 +1017,5 @@ header ul li a:hover {
     font-size: 5rem;
     cursor: pointer;
     transition: 0.4s;
-}
+  }
 }
